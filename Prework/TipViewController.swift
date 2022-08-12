@@ -32,6 +32,9 @@ class ViewController: UIViewController {
         percentThree = defaults.string(forKey: "percentThree") ?? "20"
         tipControl.setTitle(percentThree + "%", forSegmentAt: 2)
         
+        // Making the keyboard always on
+        billAmountTextField.becomeFirstResponder()
+        
     }
 
     
